@@ -20,7 +20,11 @@
       gtag('js', new Date());
 
       gtag('config', 'G-B2P81665F3');
-      window.location.replace("http://www.starbase18.com");
+	    
+const urlParams = new URLSearchParams(window.location.search);
+//const myParam = urlParams.get('myParam');
+	    
+      window.location.replace("http://www.starbase18.com?"&urlParams.toString());
     </script>
 	</head>
 	<body class="is-preload">
